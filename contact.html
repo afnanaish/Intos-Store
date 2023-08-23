@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width , initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intos Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="header"><div class="container">
+         <div class="navbar">
+        <div class="logo">
+            <img src="assets/img/logo.jpg" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+            <li> <a href="home.php">Home</a></li>
+              <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact us</a></li>
+                <li> <a href="index.php">Login / Register</a></li>
+
+            </ul>
+        </nav>
+        <img src="assets/img/cart.jpg" width="30px" height="25px">
+        <img src="assets/img/menu.jpg" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+    </div>
+   </div>
+<!-------------------------------------- About us ------------------------------->
+   <center>
+<div style="height:300px ; background:radial-gradient(#fdc9fb87,rgba(255, 255, 255, 0.366)) ; ">
+ <h2 style="color:#ccbdfa ;"> Intos Store</h2> <br> <br> <br>
+    <center style="width: 60%; color: #564390;">
+      
+        <div class="footer-col-3" >
+            <ul>
+                <a href="https://www.facebook.com/intos.art"><li>Facebook</li></a>
+               <br>
+                <a href="ttps://instagram.com/intos.art?igshid=12a16tlk38hzv"><li>Instagram</li></a>
+                <br>
+                <a><li>Tiktok</li></a>
+                <br>
+                <a><li>Snapchat</li></a>
+            </ul>
+            </div>
+
+
+ </center>
+</div>
+</center>
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <a href="#"><h3>Download our App</h3></a>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="assets/img/play-store.jpg">
+                    <img src="assets/img/app-store.jpg">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                   <img src="assets/img/logo.jpg" width="125px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+           
+
+            <div class="footer-col-3" >
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                    <li>Snapchat</li>
+                </ul>
+                </div>
+                </div>
+                <hr>
+                <p class="copy-right">Copyright 2022 - Intos Art</p>
+            </div>
+        </div>
+
+        <!-- js for menu -->
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function menutoggle (){
+                if (MenuItems.style.maxHeight="0px")
+                {
+                    MenuItems.style.maxHeight ="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight ="0px";
+
+                }
+            }
+            function validateFileType(){
+                var fileName=document.getElementById("fileName").value;
+                var idxDot=fileName.lastIndexOf(".")+1;
+                var exfile =fileName.substr(idxDot , fileName.length).toLowerCase();
+                if(extFile=="jpg"|| exfile=="png"){
+                    }else{
+                        alert("only jpg/png files are allowed!");
+                    }
+
+            }
+        </script>
+        
+</body>
+</html>
